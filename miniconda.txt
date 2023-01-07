@@ -1,0 +1,30 @@
+Conda set up in Ubuntu OS
+
+cd /tmp
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+./Miniconda3-latest-Linux-x86_64.sh
+
+conda config --set auto_activate_base false
+
+Open Miniconda Prompt and run as admin
+You should see like this:
+
+(base) 
+
+Run this command:
+conda create -n py38 -y python=3.8
+
+updation of conda:
+conda update -n base -c defaults conda
+
+To activate conda:
+conda activate py38
+
+To deactivate:
+conda deactivate
+
+
